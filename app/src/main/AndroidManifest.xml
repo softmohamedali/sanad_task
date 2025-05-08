@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainScreenActivity"
+            android:name=".HomeScreenActivity"
             android:exported="false" />
     </application>
 

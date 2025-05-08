@@ -10,10 +10,7 @@ import android.widget.Spinner;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.sanad_task.MainActivity;
-import com.example.sanad_task.R;
-
-public class MainScreenActivity extends AppCompatActivity {
+public class HomeScreenActivity extends AppCompatActivity {
 
     private Spinner menuSpinner;
     private static final String PREF_NAME = "LoginPrefs";
@@ -37,7 +34,7 @@ public class MainScreenActivity extends AppCompatActivity {
                 if (selectedItem.equals("Logout")) {
                     logout();
                 } else if (selectedItem.equals("Welcome")) {
-                    new AlertDialog.Builder(MainScreenActivity.this)
+                    new AlertDialog.Builder(HomeScreenActivity.this)
                             .setTitle("Welcome")
                             .setMessage("Welcome to the application!")
                             .setPositiveButton("OK", null)
@@ -57,7 +54,7 @@ public class MainScreenActivity extends AppCompatActivity {
         editor.putBoolean(KEY_IS_LOGGED_IN, false);
         editor.apply();
 
-        Intent intent = new Intent(MainScreenActivity.this, MainActivity.class);
+        Intent intent = new Intent(HomeScreenActivity.this, MainActivity.class);
         startActivity(intent);
         finish();
     }

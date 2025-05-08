@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void startMainScreen() {
-        Intent intent = new Intent(MainActivity.this, MainScreenActivity.class);
+        Intent intent = new Intent(MainActivity.this, HomeScreenActivity.class);
         startActivity(intent);
         finish();
     }
